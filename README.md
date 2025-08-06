@@ -6,53 +6,53 @@
 
 ## 🧠 Project Overview
 
-Ce projet explore deux piliers fondamentaux de l'informatique : les **arbres binaires** et les **algorithmes de tri**, implémentés en langage C. Il vise à renforcer ta compréhension des structures de données non linéaires et de l'efficacité algorithmique.
+This project explores two fundamental pillars of computer science: **binary trees** and **sorting algorithms**, implemented in the C programming language. It aims to strengthen your understanding of non-linear data structures and algorithmic efficiency.
 
-Tu vas construire et manipuler des arbres binaires, explorer leurs différentes formes, et implémenter plusieurs algorithmes de tri tout en analysant leur complexité temporelle avec la notation Big O.
-
----
-
-## 🎯 Objectifs pédagogiques
-
-### Arbres binaires
-- Définir ce qu’est un **arbre binaire** et le distinguer d’un **Binary Search Tree (BST)**
-- Comprendre et implémenter les parcours : **pré-ordre**, **in-ordre**, **post-ordre**, **niveau**
-- Expliquer les notions de **profondeur**, **hauteur** et **taille** d’un arbre
-- Identifier les arbres **pleins**, **complets**, **parfaits** et **équilibrés**
-- Comparer la complexité des opérations sur les arbres vs. les listes chaînées
-
-### Algorithmes de tri
-- Implémenter au moins **quatre algorithmes de tri différents**
-- Évaluer l’efficacité via la **notation Big O**
-- Choisir l’algorithme le plus adapté à un jeu de données donné
-- Comprendre ce qu’est un algorithme de tri **stable**
+You will build and manipulate binary trees, explore their various forms, and implement multiple sorting algorithms while analyzing their time complexity using Big O notation.
 
 ---
 
-## 🛠 Contraintes techniques
+## 🎯 Learning Objectives
 
-- Éditeurs autorisés : `vi`, `vim`, `emacs`
-- OS : Ubuntu 20.04 LTS
-- Compilateur : `gcc` avec les flags `-Wall -Werror -Wextra -pedantic -std=gnu89`
-- Style de code : **Betty style** (`betty-style.pl`, `betty-doc.pl`)
-- Pas de variables globales
-- Maximum de 5 fonctions par fichier
-- Tous les fichiers doivent se terminer par une nouvelle ligne
-- Un fichier `README.md` est obligatoire
-- Les fichiers d’en-tête doivent être protégés contre les inclusions multiples
+### Binary Trees
+- Define what a **binary tree** is and distinguish it from a **Binary Search Tree (BST)**
+- Understand and implement traversal methods: **pre-order**, **in-order**, **post-order**, **level-order**
+- Explain the concepts of **depth**, **height**, and **size** of a tree
+- Identify and differentiate between **full**, **complete**, **perfect**, and **balanced** binary trees
+- Compare the time complexity of tree operations vs. linked lists
+
+### Sorting Algorithms
+- Implement at least **four different sorting algorithms**
+- Evaluate efficiency using **Big O notation**
+- Choose the most appropriate sorting algorithm for a given dataset
+- Understand what makes a sorting algorithm **stable**
 
 ---
 
-## 🌳 Structure de données : Arbre binaire
+## 🛠 Technical Requirements
+
+- Allowed editors: `vi`, `vim`, `emacs`
+- OS: Ubuntu 20.04 LTS
+- Compiler: `gcc` with flags `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- Coding style: **Betty style** (`betty-style.pl`, `betty-doc.pl`)
+- No global variables
+- Maximum of 5 functions per file
+- All files must end with a newline
+- A `README.md` file is mandatory
+- Header files must be protected with include guards
+
+---
+
+## 🌳 Data Structure: Binary Tree
 
 ```c
 /**
- * struct binary_tree_s - Noeud d’un arbre binaire
+ * struct binary_tree_s - Binary tree node
  *
- * @n: Valeur entière stockée
- * @parent: Pointeur vers le parent
- * @left: Pointeur vers l’enfant gauche
- * @right: Pointeur vers l’enfant droit
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
  */
 struct binary_tree_s
 {
