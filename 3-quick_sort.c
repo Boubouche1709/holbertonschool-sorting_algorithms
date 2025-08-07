@@ -27,8 +27,8 @@ int lomuto_partition(int *array, size_t size, int low, int high)
 {
 int pivot = array[high];
 int i = low;
-
-for (int j = low; j < high; j++)
+int j = 0;
+for (j = low; j < high; j++)
 {
 if (array[j] < pivot)
 {
